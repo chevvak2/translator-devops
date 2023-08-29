@@ -8,6 +8,7 @@ data:
   {{ if not .Values.externalNeo4j }}
   NEO4J_HOST: {{ include "plater.fullname" . }}-neo4j-service
   NEO4J_HTTP_PORT: "{{ .Values.app.neo4j.httpPort }}"
+  NEO4J_BOLT_PORT: "{{ .Values.app.neo4j.boltPort }}"
   NEO4J_PASSWORD: "{{ .Values.app.neo4j.password }}"
   NEO4J_USERNAME: "{{ .Values.app.neo4j.username }}"
   NEO4J_CONNECTION_PROTOCOL: "{{ .Values.app.neo4j.protocol }}"
