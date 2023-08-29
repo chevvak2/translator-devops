@@ -148,6 +148,7 @@ app:
         url: ""
 
 skipAttributes:
+  - provided_by
 dataUrl: ""
 metadataUrl: ""
 metaKGUrl: ""
