@@ -10,6 +10,7 @@ data:
   NEO4J_HTTP_PORT: "{{ .Values.app.neo4j.httpPort }}"
   NEO4J_PASSWORD: "{{ .Values.app.neo4j.password }}"
   NEO4J_USERNAME: "{{ .Values.app.neo4j.username }}"
+  NEO4J_CONNECTION_PROTOCOL: "{{ .Values.app.neo4j.protocol }}"
   {{ else }}
   NEO4J_HOST: {{ .Values.externalNeo4j.hostName }}
   NEO4J_HTTP_PORT: "{{ .Values.externalNeo4j.port }}"

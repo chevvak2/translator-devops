@@ -55,7 +55,7 @@ data:
     rm -rf /data/databases/*
     rm -rf /data/transactions/*
     # load dump file
-    neo4j-admin load --from $FILE
+    neo4j-admin database load --from $FILE
   dataset-desc.json: |
     {{ .Values.datasetDesc | toJson }}
   openapi-config.yaml: |-
