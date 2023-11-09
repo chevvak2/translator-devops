@@ -72,7 +72,7 @@ nginx:
       tag: "1.21"
     service:
       type: LoadBalancer
-      loadBalancerIP: "152.54.15.132"
+      loadBalancerIP: "152.54.15.147"
       hostName: "litcoin-graph.apps.renci.org"
       port: 80
       boltPort: 7687
@@ -104,4 +104,4 @@ tolerations: []
 affinity: {}
 
 ingress:
-  enabled: true
+  enabled: false
