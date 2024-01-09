@@ -10,7 +10,7 @@ neo4j:
     repository: renciorg/neo4j-4.4.10-apoc-gds
     tag: "0.0.1"
     imagePullPolicy: Always
-  dataUrl: "https://stars.renci.org/var/plater/bl-3.5.4/LitCoin/adcb714a2ac7a6f9/graph_adcb714a2ac7a6f9.db.dump"
+  dataUrl: "https://stars.renci.org/var/plater/bl-3.5.4/LitCoinSapBERT/f9f6590db639e5b7/graph_f9f6590db639e5b7.db.dump"
   heapSize: 5.5G
   pageCacheSize: 3G
   resources:
@@ -73,7 +73,7 @@ nginx:
     service:
       type: LoadBalancer
       loadBalancerIP: "152.54.15.147"
-      hostName: "litcoin-graph.apps.renci.org"
+      hostName: "litcoin-sapbert-graph.apps.renci.org"
       port: 80
       boltPort: 7687
 
